@@ -1,0 +1,78 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 2px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  height: 50px;
+  width: 50px;
+}
+
+.cell:nth-child(3n),
+.cell:nth-child(6n) {
+  border-right: 3px solid #aaa;
+}
+
+.cell:nth-child(n+19):nth-child(-n+27),
+.cell:nth-child(n+46):nth-child(-n+54) {
+  border-bottom: 3px solid #aaa;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* height: 100vh; */
+  /* Set the height to the viewport height */
+}
+
+input {
+  text-align: center;
+}
+
+
+#btnSolve {
+  background-color: #4CAF50; /* Set the button background color */
+  color: white; /* Set the button text color */
+  border: none; /* Remove the button border */
+  padding: 10px 20px; /* Add some padding to the button */
+  font-size: 16px; /* Set the font size of the button text */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  border-radius: 4px; /* Add some border radius to the button */
+  box-shadow: 0px 2px 2px #888; /* Add a box shadow to the button */
+  margin: 20px 5px;
+}
+
+#btnSolve:hover {
+  background-color: #3e8e41; /* Change the button background color on hover */
+}
+
+
+#btnRead {
+  /* red background-color */
+  background-color: #f44336; /* Set the button background color */
+  color: white; /* Set the button text color */
+  border: none; /* Remove the button border */
+  padding: 10px 20px; /* Add some padding to the button */
+  font-size: 16px; /* Set the font size of the button text */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+  border-radius: 4px; /* Add some border radius to the button */
+  box-shadow: 0px 2px 2px #888; /* Add a box shadow to the button */
+  margin: 20px 5px;
+}
+
+#btnRead:hover {
+/* red background-color hover */  
+  background-color: #d32f2f;
+}
